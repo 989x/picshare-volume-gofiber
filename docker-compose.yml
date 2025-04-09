@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    container_name: picshare-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./static:/app/static
